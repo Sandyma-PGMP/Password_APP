@@ -10,7 +10,7 @@ function Signup() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("https://passwordapp-server.onrender.com/api/auth/create-user", { email, password });
+      const res = await axios.post("https://passwordapp-server.onrender.com/auth/create-user", { email, password });
       setMessage(res.data.message);
     } catch (err) {
       setMessage("Error creating account");
