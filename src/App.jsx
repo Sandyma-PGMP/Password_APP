@@ -10,7 +10,7 @@ function App() {
     <>
       <Router>
       <Routes>
-        <Route path="/forgot-password" element={<ForgotPassword />} />
+        <Route path="/" element={<ForgotPassword />} />
         <Route path="/reset-password/:token" element={<ResetPassword />} />
       </Routes>
     </Router>
